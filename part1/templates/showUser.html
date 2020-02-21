@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Userpage!</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Hi {{ UserLib['fname'] }}!</h1>
+        <p>
+            You've choosen to register the following data with us:
+            <ul>
+                <li>First name: {{ UserLib['fname'] }}</li>
+                <li>Last name: {{ UserLib['lname'] }}</li>
+                <li>Address: {{ UserLib['address'] }}</li>
+                <li>Postal code: {{ UserLib['postal'] }}</li>
+                <li>City: {{ UserLib['city'] }}</li>
+                <li>Phone number: {{ UserLib['phone'] }}</li>
+                <li>E-mail: {{ UserLib['email'] }}</li>
+                <li>Password: that's a secret!</li>
+                <li>Payment type: {{ UserLib['Payment'] }}</li>
+                <li>Comments: {{ UserLib['Comments'] }}</li>
+            </ul>
+        </p>
+        <a href="/">back</a>
+    </body>
+</html>
